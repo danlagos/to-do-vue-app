@@ -25,7 +25,7 @@ export default {
           location: "San Diego",
           date: "January 28, 2022",
           time: "12:00",
-          complete: false,
+          checked: true,
         },
         {
           id: 4582797,
@@ -35,7 +35,7 @@ export default {
           location: "San Diego",
           date: "January 28, 2022",
           time: "12:00",
-          complete: false,
+          checked: false,
         },
         {
           id: 8419988,
@@ -45,7 +45,7 @@ export default {
           location: "San Diego",
           date: "January 28, 2022",
           time: "12:00",
-          complete: false,
+          checked: false,
         },
       ],
     };

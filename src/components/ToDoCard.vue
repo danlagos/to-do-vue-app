@@ -1,6 +1,15 @@
 <template>
   <div class="to-do">
-    <span>{{ todo.title }}: {{ todo.description }}</span>
+    <span
+      >{{ todo.title }}: {{ todo.description }}
+      <input
+        type="checkbox"
+        name="checkbox"
+        id="checkbox"
+        v-model="todo.checked"
+      />
+      <label for="checkbox"></label>
+    </span>
   </div>
 </template>
 
@@ -17,7 +26,8 @@ export default {
 <style scoped>
 .to-do {
   padding: 20px;
-  width: 250px;
+  width: 500px;
+  min-width: 500px;
   cursor: pointer;
   border: 1px solid #39495c;
   margin-bottom: 18px;
