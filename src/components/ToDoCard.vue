@@ -1,15 +1,14 @@
 <template>
   <div class="to-do">
-    <span
-      >{{ todo.title }}: {{ todo.description }}
-      <input
-        type="checkbox"
-        name="checkbox"
-        id="checkbox"
-        v-model="todo.checked"
-      />
-      <label for="checkbox"></label>
-    </span>
+    <input
+      type="checkbox"
+      name="checkbox"
+      id="checkbox"
+      :checked="todo.checked"
+      @change="$emit('update: todo.checked', $event.target.checked)"
+    />
+    <label for="checkbox"> {{ todo.title }}: </label>
+    <span> {{ todo.description }} </span>
   </div>
 </template>
 

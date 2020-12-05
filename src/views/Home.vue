@@ -1,6 +1,6 @@
 <template>
   <div class="todo-Card">
-    <img alt="Vue logo" src="../assets/logo.png" />
+    <h1>To Do List - Vue.js</h1>
     <ToDoCard v-for="todo in todos" :key="todo.id" :todo="todo" />
   </div>
 </template>
@@ -25,7 +25,7 @@ export default {
           location: "San Diego",
           date: "January 28, 2022",
           time: "12:00",
-          checked: true,
+          checked: false,
         },
         {
           id: 4582797,
@@ -35,7 +35,7 @@ export default {
           location: "San Diego",
           date: "January 28, 2022",
           time: "12:00",
-          checked: false,
+          checked: true,
         },
         {
           id: 8419988,
