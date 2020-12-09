@@ -1,6 +1,7 @@
 <template>
   <div class="todo-Card">
     <h1>To Do List - Vue.js</h1>
+    <AddToDo />
     <ToDoCard v-for="todo in todos" :key="todo.id" :todo="todo" />
   </div>
 </template>
@@ -8,11 +9,13 @@
 <script>
 // @ is an alias to /src
 import ToDoCard from "@/components/ToDoCard.vue";
+import AddToDo from "@/components/AddToDo.vue";
 
 export default {
   name: "Home",
   components: {
     ToDoCard,
+    AddToDo,
   },
   data() {
     return {
