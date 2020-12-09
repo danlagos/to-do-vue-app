@@ -9,6 +9,12 @@
     />
     <label for="checkbox"> {{ todo.title }}: </label>
     <span> {{ todo.description }} </span>
+    <!-- Need edit button give it an icon-->
+    <input type="button" value="edit" />
+    <label for="edit"></label>
+    <!-- need delete button give it a trash icon-->
+    <input type="button" value="delete" />
+    <label for="delete"></label>
   </div>
 </template>
 
