@@ -1,7 +1,7 @@
 <template>
   <input class="field" type="field" name="field" id="field" />
   <label for="field"></label>
-  <input type="button" value="add" />
+  <input type="submit" value="add" />
 </template>
 
 <script></script>
